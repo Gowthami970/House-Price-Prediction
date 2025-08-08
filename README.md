@@ -29,40 +29,50 @@ The ML model is trained using a **Linear Regression** algorithm in Python with *
 ---
 
 ⚙️ Installation & Usage
-1.Clone the repository
-git clone https://github.com/Gowthami970/House-Price-Prediction.git
-cd House-Price-Prediction
+### Clone the repository
+```bash
+git clone https://github.com/yourusername/house-price-prediction.git
+cd house-price-prediction
+```
 
-2.Set up Python virtual environment
+### Set up Python virtual environment
+```bash
 python -m venv myenv
 myenv\Scripts\activate
+```
 
-3.Install dependencies
+### Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-4.Run the Flask server
+### Run the Flask server
+```bash
 cd server
 python server.py
+```
 
-5.Run the frontend
+### Run the frontend
+```bash
 cd client
 python -m http.server 5500
-
 Open browser → http://localhost:5500
+```
 
 📡 API Endpoints
 GET /get_location_names
 Returns the list of available locations.
 
 Response:
-
 {
     "locations": ["1st Phase JP Nagar", "Whitefield", "Yelahanka"]
 }
+
 POST /predict_home_price
 Predicts the price of a house.
 
 Request (x-www-form-urlencoded):
+
 Key	Value Example
 total_sqft	1200
 location	Whitefield
@@ -70,10 +80,7 @@ bhk	3
 bath	2
 
 Response:
-
 {
     "estimated_price": 85.4
 }
-
-
 
