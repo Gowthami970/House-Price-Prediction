@@ -28,24 +28,6 @@ The ML model is trained using a **Linear Regression** algorithm in Python with *
 
 ---
 
-## 📂 Project Structure
-House-Price-Prediction/
-│
-├── client/ # Frontend files
-│ ├── index.html
-│ ├── app.js
-│ ├── style.css
-│
-├── server/ # Backend files
-│ ├── server.py
-│ ├── util.py
-│ ├── artifacts/ # Saved model & columns
-│
-├── README.md
-├── requirements.txt
-
----
-
 ⚙️ Installation & Usage
 1.Clone the repository
 git clone https://github.com/Gowthami970/House-Price-Prediction.git
